@@ -1,12 +1,8 @@
-const express = require("express");
+const app = require("./api/resources");
 
 const PORT = 3001;
-const app = express();
 
-app.get("/api", (req, res) => {
-    res.json({ message: "Hello from server!" });
-});
-  
+/* _______ Server _______*/
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
 });
